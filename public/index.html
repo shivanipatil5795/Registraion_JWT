@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registration Form</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css">
+</head>
+<body>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6 image-container">
+        <img src="https://images.pexels.com/photos/459335/pexels-photo-459335.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Image Description" class="side-image">
+      </div>
+      <div class="col-md-6 main">
+        <form id="signUpForm" action="/sign_up" method="POST" novalidate>
+          <h2>Registration Form</h2>
+          <input type="text" class="box" id="name" name="name" placeholder="Name" required/><br>
+          <span class="error-message" id="nameError"></span><br>
+          <input type="email" class="box" id="email" name="email" placeholder="Email" required/><br>
+          <span class="error-message" id="emailError"></span><br>
+          <input type="text" class="box" id="phno" name="phno" placeholder="Mobile" required/><br>
+          <span class="error-message" id="phnoError"></span><br>
+          <input type="text" class="box" id="username" name="username" placeholder="Username" required/><br>
+          <span class="error-message" id="usernameError"></span><br>
+          <input type="password" class="box" id="password" name="password" placeholder="Password" required/><br>
+          <span class="error-message" id="passwordError"></span><br>
+          <input type="submit" value="Submit" id="submit" disabled/>
+        </form>
+        <button class="login-button"><a href="/login.html">Login</a></button>
+      </div>
+    </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <script src="form-validation.js"></script>
+</body>
+</html>
